@@ -108,7 +108,7 @@ Future<void> seedRecipes() async {
         category: 'lunch',
         ingredients:
             '3 cups leftover lechon (chopped)|½ cup vinegar|¼ cup soy sauce|5 cloves garlic (crushed)|2 bay leaves|½ teaspoon pepper',
-        matchingIngredients: 'lechon|vinegar|soy sause|garlic|bay leaves',
+        matchingIngredients: 'lechon|vinegar|soy sauce|garlic|bay leaves',
         steps:
             'Combine all ingredients in a pot.|Simmer on low heat.|Cook until sauce thickens.',
         favorite: 0,

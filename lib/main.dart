@@ -6,8 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MainApp());
   Dbhelper.openDb();
+  Dbhelper.deleteAllRecipe();
   seedRecipes();
 }
 
@@ -41,3 +43,8 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+
+// Future<void> resetOnboarding() async {
+//   final prefs = await SharedPreferences.getInstance();
+//   await prefs.remove('onboarding_complete');
+// }
